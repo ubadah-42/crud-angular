@@ -1,0 +1,30 @@
+
+<table class="table table align-middle  mt-5">
+    <thead>
+        <tr>
+            <th scope="col">FIRST NAME</th>
+            <th scope="col">LAST NAME</th>
+            <th scope="col">HOBBIES</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">CITY</th>
+            <th scope="col">AGE</th>
+            <th scope="col">OPTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(item of data;track item){
+        <tr>
+            <td>{{item.firstName}}</td>
+            <td>{{item.lastName}}</td>
+            <td>{{item.hobbies}}</td>
+            <td>{{item.gender}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.age}}</td>
+            <td>{{item.option}}
+                <button type="" class="btn btn-primary me-2">EDIT</button>
+                <button type="" class="btn btn-danger">DELETE</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
